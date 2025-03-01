@@ -63,3 +63,11 @@ for (let i = 0; i < completedBtn.length; i++) {
 
     });
 }
+
+function color() {
+    return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+}
+
+document.getElementById('theme-btn').addEventListener('click', function() {
+    document.body.style.backgroundColor = color();
+});
