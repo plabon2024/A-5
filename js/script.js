@@ -24,6 +24,10 @@ for (let i = 0; i < completedBtn.length; i++) {
     const completed = completedBtn[i];
     completed.addEventListener("click", function (event) {
         alert('Board updated Successfully')
+        if(assigned===1){
+            alert('congrates!!! You have completed all the current task')
+
+        }
         completed.classList.remove('bg-blue-700')
         completed.classList.remove('text-white')
         completed.classList.add('bg-slate-400')
